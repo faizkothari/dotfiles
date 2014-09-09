@@ -24,9 +24,9 @@ filetype plugin indent on
 " The rest of your config follows here
 augroup vimrc_autocmds
     autocmd!
-        " highlight characters past column 120
+        " highlight characters past column 80
 	autocmd FileType python highlight Excess ctermbg=White guibg=Black
-	autocmd FileType python match Excess /\%79v.*/
+	autocmd FileType python match Excess /\%80v.*/
 	autocmd FileType python set nowrap
 	augroup END
 
